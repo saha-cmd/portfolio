@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="windowBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="480" fill="#0B0F19"/>
+
+  <!-- Desktop App Window Frame (Tkinter UI Mockup) -->
+  <g transform="translate(40, 30)" filter="url(#cardShadow)">
+    <!-- Main Window Background -->
+    <rect width="720" height="420" rx="12" fill="url(#windowBg)" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Window Title Bar -->
+    <path d="M 0 12 Q 0 0 12 0 L 708 0 Q 720 0 720 12 L 720 40 L 0 40 Z" fill="#111827"/>
+    <!-- Window Controls (Red, Yellow, Green macOS/Linux/Custom style) -->
+    <circle cx="24" cy="20" r="6" fill="#EF4444"/>
+    <circle cx="44" cy="20" r="6" fill="#F59E0B"/>
+    <circle cx="64" cy="20" r="6" fill="#10B981"/>
+    <!-- Window Title Text -->
+    <text x="360" y="25" fill="#94A3B8" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" text-anchor="middle">
+      Hotel_Management_System_v2.4.py [Tkinter GUI + Local DB]
+    </text>
+    <rect x="630" y="10" width="70" height="20" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="1"/>
+    <text x="665" y="24" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">ACTIVE</text>
+
+    <!-- Sub Header Bar -->
+    <rect x="0" y="40" width="720" height="50" fill="#1E293B" opacity="0.6"/>
+    <text x="30" y="72" fill="#F8FAFC" font-family="'Space Grotesk', sans-serif" font-size="18" font-weight="700">
+      Grand Horizon Hotel • Administrative Portal
+    </text>
+    <rect x="520" y="52" width="170" height="26" rx="6" fill="#0B0F19" stroke="#38BDF8" stroke-width="1"/>
+    <text x="605" y="69" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">
+      🔒 Auth: Admin Verified
+    </text>
+
+    <!-- Sidebar Navigation -->
+    <rect x="0" y="90" width="180" height="330" fill="#0D1322"/>
+    <line x1="180" y1="90" x2="180" y2="420" stroke="#1E293B" stroke-width="1.5"/>
+
+    <!-- Nav Items -->
+    <rect x="15" y="110" width="150" height="36" rx="6" fill="url(#headerGrad)"/>
+    <text x="45" y="133" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="13" font-weight="600">📊 Dashboard</text>
+    <rect x="15" y="155" width="150" height="36" rx="6" fill="#111827" opacity="0.6"/>
+    <text x="45" y="178" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="13">🔑 Room Allotment</text>
+    <rect x="15" y="200" width="150" height="36" rx="6" fill="#111827" opacity="0.6"/>
+    <text x="45" y="223" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="13">👥 Guest Records</text>
+    <rect x="15" y="245" width="150" height="36" rx="6" fill="#111827" opacity="0.6"/>
+    <text x="45" y="268" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="13">💳 Billing &amp; Invoices</text>
+    <rect x="15" y="290" width="150" height="36" rx="6" fill="#111827" opacity="0.6"/>
+    <text x="45" y="313" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="13">🗄️ Database Logs</text>
+
+    <!-- DB Storage Status Box at Sidebar Bottom -->
+    <rect x="15" y="350" width="150" height="52" rx="6" fill="#111827" stroke="#334155" stroke-width="1"/>
+    <text x="25" y="370" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold">LOCAL DB: CONNECTED</text>
+    <text x="25" y="388" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="9">SQLite3 / File Storage</text>
+
+    <!-- Main Content Area -->
+    <!-- Top Stat Row -->
+    <g transform="translate(200, 105)">
+      <!-- Card 1 -->
+      <rect width="155" height="65" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="25" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">TOTAL ROOMS</text>
+      <text x="15" y="52" fill="#F8FAFC" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="bold">120</text>
+      <circle cx="130" cy="35" r="12" fill="#0284C7" opacity="0.2"/>
+      <text x="130" y="39" fill="#38BDF8" font-size="12" text-anchor="middle">🏨</text>
+
+      <!-- Card 2 -->
+      <rect x="175" width="155" height="65" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+      <text x="190" y="25" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">OCCUPANCY RATE</text>
+      <text x="190" y="52" fill="#10B981" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="bold">88.5%</text>
+      <circle cx="305" cy="35" r="12" fill="#10B981" opacity="0.2"/>
+      <text x="305" y="39" fill="#10B981" font-size="12" text-anchor="middle">📈</text>
+
+      <!-- Card 3 -->
+      <rect x="350" width="155" height="65" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+      <text x="365" y="25" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">AUTO ALLOTMENT</text>
+      <text x="365" y="52" fill="#818CF8" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="bold">OPTIMAL</text>
+      <circle cx="480" cy="35" r="12" fill="#818CF8" opacity="0.2"/>
+      <text x="480" y="39" fill="#818CF8" font-size="12" text-anchor="middle">⚡</text>
+    </g>
+
+    <!-- Automated Room Allotment Grid Matrix -->
+    <g transform="translate(200, 185)">
+      <text x="0" y="15" fill="#F8FAFC" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">
+        Automated Room Allocation Matrix (Floor 1-3)
+      </text>
+      <rect x="370" y="0" width="135" height="20" rx="4" fill="#0B0F19" stroke="#334155" stroke-width="1"/>
+      <circle cx="380" cy="10" r="4" fill="#10B981"/>
+      <text x="390" y="13" fill="#94A3B8" font-family="'JetBrains Mono', monospace" font-size="9">Avail</text>
+      <circle cx="430" cy="10" r="4" fill="#EF4444"/>
+      <text x="440" y="13" fill="#94A3B8" font-family="'JetBrains Mono', monospace" font-size="9">Booked</text>
+      <circle cx="475" cy="10" r="4" fill="#818CF8"/>
+      <text x="485" y="13" fill="#94A3B8" font-family="'JetBrains Mono', monospace" font-size="9">VIP</text>
+
+      <!-- Room Cells Grid -->
+      <!-- Row 1 -->
+      <rect x="0" y="30" width="75" height="45" rx="6" fill="#1E293B" stroke="#10B981" stroke-width="1.5"/>
+      <text x="10" y="48" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">#101</text>
+      <text x="10" y="64" fill="#10B981" font-family="'Inter', sans-serif" font-size="9">Available</text>
+
+      <rect x="85" y="30" width="75" height="45" rx="6" fill="#1E293B" stroke="#EF4444" stroke-width="1.5"/>
+      <text x="95" y="48" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">#102</text>
+      <text x="95" y="64" fill="#EF4444" font-family="'Inter', sans-serif" font-size="9">Occupied</text>
+
+      <rect x="170" y="30" width="75" height="45" rx="6" fill="#1E293B" stroke="#EF4444" stroke-width="1.5"/>
+      <text x="180" y="48" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">#103</text>
+      <text x="180" y="64" fill="#EF4444" font-family="'Inter', sans-serif" font-size="9">Occupied</text>
+
+      <rect x="255" y="30" width="75" height="45" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1.5"/>
+      <text x="265" y="48" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">#104</text>
+      <text x="265" y="64" fill="#818CF8" font-family="'Inter', sans-serif" font-size="9">VIP Suite</text>
+
+      <rect x="340" y="30" width="75" height="45" rx="6" fill="#1E293B" stroke="#10B981" stroke-width="1.5"/>
+      <text x="350" y="48" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">#105</text>
+      <text x="350" y="64" fill="#10B981" font-family="'Inter', sans-serif" font-size="9">Available</text>
+
+      <rect x="425" y="30" width="75" height="45" rx="6" fill="#1E293B" stroke="#EF4444" stroke-width="1.5"/>
+      <text x="435" y="48" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">#106</text>
+      <text x="435" y="64" fill="#EF4444" font-family="'Inter', sans-serif" font-size="9">Occupied</text>
+
+      <!-- Row 2 -->
+      <rect x="0" y="85" width="75" height="45" rx="6" fill="#1E293B" stroke="#EF4444" stroke-width="1.5"/>
+      <text x="10" y="103" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">#201</text>
+      <text x="10" y="119" fill="#EF4444" font-family="'Inter', sans-serif" font-size="9">Occupied</text>
+
+      <rect x="85" y="85" width="75" height="45" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1.5"/>
+      <text x="95" y="103" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">#202</text>
+      <text x="95" y="119" fill="#818CF8" font-family="'Inter', sans-serif" font-size="9">VIP Suite</text>
+
+      <rect x="170" y="85" width="75" height="45" rx="6" fill="#1E293B" stroke="#10B981" stroke-width="1.5"/>
+      <text x="180" y="103" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">#203</text>
+      <text x="180" y="119" fill="#10B981" font-family="'Inter', sans-serif" font-size="9">Available</text>
+
+      <rect x="255" y="85" width="75" height="45" rx="6" fill="#1E293B" stroke="#10B981" stroke-width="1.5"/>
+      <text x="265" y="103" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">#204</text>
+      <text x="265" y="119" fill="#10B981" font-family="'Inter', sans-serif" font-size="9">Available</text>
+
+      <rect x="340" y="85" width="75" height="45" rx="6" fill="#1E293B" stroke="#EF4444" stroke-width="1.5"/>
+      <text x="350" y="103" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">#205</text>
+      <text x="350" y="119" fill="#EF4444" font-family="'Inter', sans-serif" font-size="9">Occupied</text>
+
+      <rect x="425" y="85" width="75" height="45" rx="6" fill="#1E293B" stroke="#818CF8" stroke-width="1.5"/>
+      <text x="435" y="103" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">#206</text>
+      <text x="435" y="119" fill="#818CF8" font-family="'Inter', sans-serif" font-size="9">VIP Suite</text>
+
+      <!-- Bottom Status Log Strip -->
+      <rect x="0" y="145" width="500" height="65" rx="8" fill="#0B0F19" stroke="#1E293B" stroke-width="1"/>
+      <text x="15" y="165" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">
+        &gt; Auto-Allotment Algorithm Result:
+      </text>
+      <text x="15" y="184" fill="#94A3B8" font-family="'JetBrains Mono', monospace" font-size="10">
+        • Client Preference: Double Bed, High Floor, AC [MATCH FOUND: Room #204]
+      </text>
+      <text x="15" y="200" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="10">
+        • Authentication: SHA-256 Hash Verified | Local DB Transaction Committed.
+      </text>
+    </g>
+  </g>
+</svg>

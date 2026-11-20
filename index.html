@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalpataru Saha | Computer Science &amp; AI/ML Portfolio</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Personal portfolio of Kalpataru Saha - Computer Science & Engineering (AI & ML) undergraduate at Netaji Subhas Engineering College, Kolkata. Skilled in Kotlin, Jetpack Compose, Python, C++, SQL, Room, and Electron.">
+  <meta name="author" content="Kalpataru Saha">
+  <meta name="keywords" content="Kalpataru Saha, Portfolio, Computer Science, AI ML, Kolkata, Netaji Subhas Engineering College, Android Developer, Software Engineering">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kalpataru Saha | Computer Science &amp; AI/ML">
+  <meta property="og:description" content="Computer Science &amp; AI/ML Undergraduate passionate about software development, database management, and process automation.">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Full-Screen Interactive Floating-Particle Background Canvas -->
+  <canvas id="particle-canvas" class="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- ==========================================================================
+       Full-Width Top Navigation Bar (Edge-to-Edge 100vw, Left & Right Pinned)
+       ========================================================================== -->
+  <header class="top-navbar" id="topNavbar">
+    <div class="wide-container nav-flex">
+      <!-- Far-Left Brand -->
+      <a href="#hero" class="nav-brand" aria-label="Kalpataru Saha Home">
+        <span class="brand-monogram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </span>
+        <span class="brand-name">Kalpataru Saha</span>
+      </a>
+
+      <!-- Far-Right Navigation Links & Resume Button -->
+      <nav class="nav-links-desktop" aria-label="Main Navigation">
+        <a href="#about" class="nav-anchor">About</a>
+        <a href="#projects" class="nav-anchor">Projects</a>
+        <a href="#skills" class="nav-anchor">Skills</a>
+        <a href="#education" class="nav-anchor">Education</a>
+        <a href="#contact" class="nav-anchor">Contact</a>
+        <a href="assets/Kalpataru_Saha_Resume.pdf" download="Kalpataru_Saha_Resume.pdf" class="btn-nav-resume">
+          Resume <span class="arrow-glyph">↗</span>
+        </a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#education" class="mobile-nav-link">Education</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <a href="assets/Kalpataru_Saha_Resume.pdf" download="Kalpataru_Saha_Resume.pdf" class="btn-nav-resume" style="align-self: flex-start; margin-top: 1rem;">
+        Resume <span class="arrow-glyph">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Wide Asymmetric Hero Section (1.4fr : 1fr Split)
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="wide-container hero-grid">
+        
+        <!-- Left Side: Oversized Left-Aligned Headline & Intro -->
+        <div class="hero-left-content">
+          <!-- 1. Eyebrow Greeting & Live Availability Tag -->
+          <div class="hero-eyebrow mono hero-animate-layer">
+            <span class="eyebrow-greeting">Hi, I’m</span>
+            <span class="eyebrow-dot" aria-hidden="true">•</span>
+            <span class="eyebrow-status">
+              <span class="live-status-dot" aria-hidden="true"></span>
+              <span>Open to Internships &amp; Technical Projects</span>
+            </span>
+          </div>
+
+          <!-- 2. Sole Dominant H1 (Single Line on Desktop) -->
+          <h1 class="hero-display-title hero-animate-layer">
+            Kalpataru Saha
+          </h1>
+
+          <!-- 3. Refined Role & Location Subtitle -->
+          <p class="hero-role-subtitle hero-animate-layer">
+            <span class="role-text">Computer Science &amp; AI/ML Undergraduate</span>
+            <span class="role-dash" aria-hidden="true">—</span>
+            <span class="location-tag">
+              <svg class="location-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Kolkata, India</span>
+            </span>
+          </p>
+
+          <!-- 4. High-Contrast Bio Narrative -->
+          <p class="hero-bio-narrative hero-animate-layer">
+            Passionate about software engineering, database management, and process automation. Transforming computational logic into <strong class="hero-highlight">resilient offline desktop applications</strong>, <strong class="hero-highlight">structured database routines</strong>, and <strong class="hero-highlight">high-performance Android systems</strong>.
+          </p>
+
+          <!-- 5. Unboxed Action & Quick-Links Row -->
+          <div class="hero-action-row hero-animate-layer">
+            <a href="#projects" class="hero-btn-primary">
+              Explore Projects <span class="arrow-down" aria-hidden="true">↓</span>
+            </a>
+            <a href="#contact" class="hero-link-secondary">
+              <span>Get in Touch</span> <span class="arrow-right" aria-hidden="true">→</span>
+            </a>
+            <span class="hero-actions-divider" aria-hidden="true"></span>
+            <div class="hero-social-links">
+              <a href="https://github.com/saha-cmd" target="_blank" rel="noopener noreferrer" class="hero-social-anchor">
+                <span>GitHub</span> <span class="arrow-lift" aria-hidden="true">↗</span>
+              </a>
+              <a href="https://www.linkedin.com/in/kalpataru-saha-430134311" target="_blank" rel="noopener noreferrer" class="hero-social-anchor">
+                <span>LinkedIn</span> <span class="arrow-lift" aria-hidden="true">↗</span>
+              </a>
+              <a href="https://www.instagram.com/hrn.kalpa/" target="_blank" rel="noopener noreferrer" class="hero-social-anchor">
+                <span>Instagram</span> <span class="arrow-lift" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Metadata Row -->
+          <div class="hero-inline-meta mono hero-animate-layer">
+            <div class="meta-item">
+              <span class="meta-label">INSTITUTION</span>
+              <span class="meta-value">NSEC Kolkata (MAKAUT)</span>
+            </div>
+            <div class="meta-sep">/</div>
+            <div class="meta-item">
+              <span class="meta-label">SPECIALIZATION</span>
+              <span class="meta-value">CSE (AI &amp; ML)</span>
+            </div>
+            <div class="meta-sep">/</div>
+            <div class="meta-item">
+              <span class="meta-label">TIMEZONE</span>
+              <span class="meta-value">IST (UTC+5:30)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Circular Profile Photo Layered Over Inline Wireframe Graphic -->
+        <div class="hero-right-wireframe">
+          <div class="wireframe-graphic-stage">
+            
+            <!-- Custom Inline Monochrome Geometric Wireframe SVG Graphic -->
+            <svg class="hero-wireframe-svg" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Coordinate Axes -->
+              <line x1="50" y1="250" x2="450" y2="250" stroke="#1A1A1A" stroke-width="1" />
+              <line x1="250" y1="50" x2="250" y2="450" stroke="#1A1A1A" stroke-width="1" />
+              
+              <!-- Concentric Orbital Rings -->
+              <circle cx="250" cy="250" r="160" stroke="#27272A" stroke-width="1" stroke-dasharray="3 5" />
+              <circle cx="250" cy="250" r="210" stroke="#1F1F1F" stroke-width="1" />
+              <circle cx="250" cy="250" r="235" stroke="#27272A" stroke-width="0.8" stroke-dasharray="8 12" />
+
+              <!-- Outer Tech Crosshairs -->
+              <path d="M250 15 L250 35 M250 465 L250 485 M15 250 L35 250 M465 250 L485 250" stroke="#3F3F46" stroke-width="1.5" />
+              <circle cx="250" cy="25" r="2" fill="#71717A" />
+              <circle cx="250" cy="475" r="2" fill="#71717A" />
+              <circle cx="25" cy="250" r="2" fill="#71717A" />
+              <circle cx="475" cy="250" r="2" fill="#71717A" />
+
+              <!-- Rotating Wireframe Polyhedron Group -->
+              <g class="rotating-polyhedron">
+                <!-- Isometric Cube / Octahedron Wireframe -->
+                <polygon points="250,90 380,170 380,330 250,410 120,330 120,170" stroke="#27272A" stroke-width="1" />
+                <line x1="250" y1="90" x2="250" y2="250" stroke="#3F3F46" stroke-width="1" />
+                <line x1="380" y1="170" x2="250" y2="250" stroke="#3F3F46" stroke-width="1" />
+                <line x1="380" y1="330" x2="250" y2="250" stroke="#27272A" stroke-width="1" />
+                <line x1="250" y1="410" x2="250" y2="250" stroke="#3F3F46" stroke-width="1" />
+                <line x1="120" y1="330" x2="250" y2="250" stroke="#27272A" stroke-width="1" />
+                <line x1="120" y1="170" x2="250" y2="250" stroke="#3F3F46" stroke-width="1" />
+
+                <!-- Internal Secondary Geometry -->
+                <polygon points="250,130 340,190 340,310 250,370 160,310 160,190" stroke="#1F1F1F" stroke-width="1" stroke-dasharray="2 4" />
+              </g>
+
+              <!-- Radial Coordinate Markers -->
+              <text x="260" y="45" font-family="'JetBrains Mono', monospace" font-size="9" fill="#52525B">N 88°21'E</text>
+              <text x="390" y="245" font-family="'JetBrains Mono', monospace" font-size="9" fill="#52525B">SYS::READY</text>
+              <text x="45" y="245" font-family="'JetBrains Mono', monospace" font-size="9" fill="#52525B">22°34'N</text>
+            </svg>
+
+            <!-- Circular Monochrome Profile Photo Layered Cleanly at Center -->
+            <div class="hero-avatar-centerpiece">
+              <img 
+                src="profile.jpg" 
+                alt="Kalpataru Saha" 
+                class="hero-profile-photo"
+                onerror="this.onerror=null; this.src='assets/avatar-fallback.svg';"
+              />
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         01. ABOUT SECTION (Wide Asymmetric 280px : 1fr Split)
+         ========================================================================== -->
+    <section class="asymmetric-section" id="about">
+      <div class="wide-container asymmetric-grid">
+        
+        <!-- Left Column: Sticky Section Index + Glyph -->
+        <div class="sticky-section-nav">
+          <div class="section-badge mono">01 // ABOUT</div>
+          <p class="section-hint">Background, academic focus &amp; engineering principles.</p>
+          
+          <!-- Section Minimal SVG Glyph -->
+          <div class="section-svg-glyph" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="20" stroke="#27272A" stroke-width="1" stroke-dasharray="2 3" />
+              <circle cx="24" cy="24" r="6" stroke="#FFFFFF" stroke-width="1.5" />
+              <line x1="24" y1="4" x2="24" y2="14" stroke="#52525B" stroke-width="1" />
+              <line x1="24" y1="34" x2="24" y2="44" stroke="#52525B" stroke-width="1" />
+              <line x1="4" y1="24" x2="14" y2="24" stroke="#52525B" stroke-width="1" />
+              <line x1="34" y1="24" x2="44" y2="24" stroke="#52525B" stroke-width="1" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Right Column: Expansive Split (Bio Paragraphs + Neural Contour Graphic) -->
+        <div class="about-wide-split">
+          
+          <div class="about-paragraphs-block">
+            <h2 class="sub-headline">
+              Engineering deterministic software &amp; automated computational workflows.
+            </h2>
+            
+            <p>
+              I am a first-year Computer Science and Engineering undergraduate specializing in <strong>Artificial Intelligence &amp; Machine Learning</strong> at <strong>Netaji Subhas Engineering College, Kolkata</strong> (affiliated with MAKAUT). My core technical toolkit spans <strong>Python, Kotlin, C++, C, JavaScript, SQL, and VBA</strong>.
+            </p>
+            <p>
+              I thrive on turning computational logic into high-impact software, local database solutions, and automated workflows. Whether architecting structured desktop applications, developing offline-first Android media apps with modern reactive UI patterns, or automating complex repetitive data tasks in Excel through VBA, I focus on clean design patterns, algorithm optimization, and dependable execution.
+            </p>
+            <p>
+              Beyond the terminal, I believe holistic discipline fuels engineering rigor. My journey combines being a multilingual communicator across <strong>5 Indian languages</strong> (English, Bengali, Hindi, Gujarati, Punjabi), an elected <strong>School House Vice Captain</strong>, competitive <strong>athlete (100m sprint gold medalist &amp; footballer)</strong>, certified <strong>Abacus champion</strong>, and an award-winning <strong>Bengali poetry recitation champion</strong>.
+            </p>
+          </div>
+
+          <!-- Right Side: Tall Minimal Inline SVG Neural-Network / Contour Vector Illustration -->
+          <div class="about-graphic-frame" aria-hidden="true">
+            <svg class="about-neural-svg" viewBox="0 0 340 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Topographic Contour Lines -->
+              <path d="M 20 80 Q 90 20 180 80 T 320 80" stroke="#1F1F1F" stroke-width="1" fill="none" />
+              <path d="M 20 120 Q 110 50 190 120 T 320 120" stroke="#27272A" stroke-width="1" fill="none" />
+              <path d="M 20 160 Q 100 90 200 160 T 320 160" stroke="#1F1F1F" stroke-width="1" stroke-dasharray="3 4" fill="none" />
+              <path d="M 20 200 Q 120 130 210 200 T 320 200" stroke="#27272A" stroke-width="1" fill="none" />
+              <path d="M 20 240 Q 110 170 200 240 T 320 240" stroke="#1F1F1F" stroke-width="1" fill="none" />
+              <path d="M 20 280 Q 130 210 220 280 T 320 280" stroke="#27272A" stroke-width="1" stroke-dasharray="4 6" fill="none" />
+              <path d="M 20 320 Q 120 250 210 320 T 320 320" stroke="#1F1F1F" stroke-width="1" fill="none" />
+              <path d="M 20 360 Q 140 290 230 360 T 320 360" stroke="#27272A" stroke-width="1" fill="none" />
+
+              <!-- Neural Network Lattice Nodes & Connecting Rays -->
+              <line x1="80" y1="140" x2="170" y2="200" stroke="#27272A" stroke-width="1" />
+              <line x1="80" y1="260" x2="170" y2="200" stroke="#27272A" stroke-width="1" />
+              <line x1="170" y1="200" x2="260" y2="150" stroke="#3F3F46" stroke-width="1" />
+              <line x1="170" y1="200" x2="260" y2="270" stroke="#3F3F46" stroke-width="1" />
+              <line x1="80" y1="140" x2="80" y2="260" stroke="#1F1F1F" stroke-width="1" stroke-dasharray="2 3" />
+              <line x1="260" y1="150" x2="260" y2="270" stroke="#1F1F1F" stroke-width="1" stroke-dasharray="2 3" />
+
+              <!-- Node Points -->
+              <circle cx="80" cy="140" r="3.5" fill="#71717A" />
+              <circle cx="80" cy="260" r="3.5" fill="#71717A" />
+              <circle cx="170" cy="200" r="5" fill="#FFFFFF" />
+              <circle cx="260" cy="150" r="3.5" fill="#71717A" />
+              <circle cx="260" cy="270" r="3.5" fill="#71717A" />
+
+              <!-- Monospace Technical Coordinates -->
+              <text x="24" y="420" font-family="'JetBrains Mono', monospace" font-size="10" fill="#52525B">// LOGIC_MATRIX: DETERMINISTIC</text>
+            </svg>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         02. PROJECTS SECTION (Wide Horizontal Splits with Schematic Vectors)
+         ========================================================================== -->
+    <section class="asymmetric-section" id="projects">
+      <div class="wide-container asymmetric-grid">
+        
+        <!-- Left Column: Sticky Section Index + Glyph -->
+        <div class="sticky-section-nav">
+          <div class="section-badge mono">02 // PROJECTS</div>
+          <p class="section-hint">Engineered software systems, local-first apps &amp; tools.</p>
+          
+          <div class="section-svg-glyph" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <rect x="8" y="10" width="32" height="28" stroke="#27272A" stroke-width="1" />
+              <line x1="8" y1="18" x2="40" y2="18" stroke="#27272A" stroke-width="1" />
+              <circle cx="13" cy="14" r="1.5" fill="#71717A" />
+              <circle cx="18" cy="14" r="1.5" fill="#71717A" />
+              <polyline points="15 25 20 29 15 33" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+              <line x1="23" y1="33" x2="29" y2="33" stroke="#FFFFFF" stroke-width="1.2" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Right Column: 4 Unboxed Horizontal Projects with Schematic Graphics -->
+        <div class="projects-wide-stream">
+          
+          <!-- Project 1: Gallery -->
+          <article class="project-schematic-row">
+            <div class="project-info-col">
+              <div class="project-headline-wrap">
+                <span class="project-category-tag mono">Android App · Local-First Vault</span>
+                <h3 class="project-title-link">
+                  <a href="https://github.com/saha-cmd/Gallery" target="_blank" rel="noopener noreferrer">
+                    Gallery — Local-First Android Media &amp; Vault App <span class="arrow-glyph">↗</span>
+                  </a>
+                </h3>
+              </div>
+
+              <p class="project-desc">
+                A local-first Photo &amp; Video Gallery application for Android built across a 9-module Clean Architecture + MVVM codebase, operating 100% on-device with zero cloud uploads, telemetry, or tracking.
+              </p>
+
+              <ul class="project-feature-list">
+                <li><span class="feature-bullet">·</span> <strong>Continuous Zoom Media Grid:</strong> Engineered a continuous, finger-tracked pinch-to-zoom media grid (2 to 7 columns) with adaptive monthly/daily headers and fast-scroll album grouping.</li>
+                <li><span class="feature-bullet">·</span> <strong>Lossless Viewer &amp; On-Device Editing:</strong> Built a lossless full-resolution photo viewer (1.0x–5.0x focal zoom), Media3 ExoPlayer video playback, swipe-up EXIF metadata sheets, and UCrop photo editing.</li>
+                <li><span class="feature-bullet">·</span> <strong>Hardware-Backed Encrypted Vault:</strong> Implemented an AES-256-GCM encrypted Secure Vault protected by Android Keystore, Biometric/PIN unlock, and FLAG_SECURE screen-capture blocking.</li>
+              </ul>
+
+              <div class="project-tech-strip mono">
+                Kotlin · Jetpack Compose · Room · AES-256-GCM · Media3 · Material 3
+              </div>
+            </div>
+
+            <!-- Right Schematic Vector: Gallery Photo Grid + Vault Shield -->
+            <div class="project-schematic-col" aria-hidden="true">
+              <svg class="schematic-svg" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Overlapping Photo Grid Frames -->
+                <rect x="30" y="30" width="160" height="110" stroke="#27272A" stroke-width="1" />
+                <rect x="60" y="55" width="160" height="110" stroke="#3F3F46" stroke-width="1" fill="#050505" />
+                <line x1="60" y1="85" x2="220" y2="85" stroke="#1F1F1F" stroke-width="1" />
+                <circle cx="90" cy="115" r="14" stroke="#27272A" stroke-width="1" />
+                <polyline points="75 145 110 120 150 145" stroke="#27272A" stroke-width="1" />
+                <polyline points="135 145 165 128 200 145" stroke="#27272A" stroke-width="1" />
+                
+                <!-- Vector Shield & Keyhole Emblem (AES-256-GCM Vault) -->
+                <g transform="translate(185, 95)">
+                  <path d="M 35 10 L 65 22 V 55 C 65 80 35 95 35 95 C 35 95 5 80 5 55 V 22 Z" stroke="#FFFFFF" stroke-width="1.5" fill="#0A0A0A" />
+                  <circle cx="35" cy="45" r="7" stroke="#FFFFFF" stroke-width="1.2" />
+                  <path d="M 32 50 L 29 65 H 41 L 38 50 Z" stroke="#FFFFFF" stroke-width="1.2" fill="#FFFFFF" />
+                  <circle cx="35" cy="45" r="2.5" fill="#0A0A0A" />
+                </g>
+                <text x="65" y="195" font-family="'JetBrains Mono', monospace" font-size="9" fill="#52525B">VAULT // AES-256-GCM</text>
+              </svg>
+            </div>
+          </article>
+
+          <!-- Project 2: BingeLog (PC & Mobile) -->
+          <article class="project-schematic-row">
+            <div class="project-info-col">
+              <div class="project-headline-wrap">
+                <span class="project-category-tag mono">Desktop &amp; Android Ecosystem</span>
+                <h3 class="project-title-link">
+                  <a href="https://github.com/saha-cmd" target="_blank" rel="noopener noreferrer">
+                    BingeLog (PC &amp; Mobile) — Cross-Platform Entertainment Tracker <span class="arrow-glyph">↗</span>
+                  </a>
+                </h3>
+              </div>
+
+              <p class="project-desc">
+                A unified entertainment dictionary, discovery hub, and watchlist tracker for Movies, Web Series, and Anime spanning a cross-platform Electron/React desktop app and a native Kotlin/Compose Android app.
+              </p>
+
+              <ul class="project-feature-list">
+                <li><span class="feature-bullet">·</span> <strong>Multi-Search Discovery &amp; Streaming Deep Links:</strong> Integrated debounced multi-search and trending feeds via TMDB with automatic Anime classification, inline trailers, and Watchmode regional deep links.</li>
+                <li><span class="feature-bullet">·</span> <strong>Granular Watchlist Checkpoints:</strong> Designed a 3-state watchlist with Season/Episode +1 trackers, minute-level playback checkpoints, and offline-first persistence.</li>
+                <li><span class="feature-bullet">·</span> <strong>Two-Way Google Drive Sync Engine:</strong> Architected a conflict-safe two-way Google Drive sync engine using per-title updatedAt timestamps and deletedKeys tombstones.</li>
+              </ul>
+
+              <div class="project-tech-strip mono">
+                Kotlin · Jetpack Compose · Electron 33 · React 18 · Tailwind CSS · Room · TMDB API
+              </div>
+            </div>
+
+            <!-- Right Schematic Vector: Dual Desktop & Mobile Silhouettes with Sync Wave -->
+            <div class="project-schematic-col" aria-hidden="true">
+              <svg class="schematic-svg" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Desktop Window Silhouette -->
+                <rect x="25" y="35" width="160" height="105" rx="3" stroke="#27272A" stroke-width="1" fill="#050505" />
+                <line x1="25" y1="55" x2="185" y2="55" stroke="#1F1F1F" stroke-width="1" />
+                <circle cx="38" cy="45" r="2" fill="#52525B" />
+                <circle cx="48" cy="45" r="2" fill="#52525B" />
+                <circle cx="58" cy="45" r="2" fill="#52525B" />
+                <!-- Desktop Stand -->
+                <path d="M 85 140 L 80 160 H 130 L 125 140" stroke="#27272A" stroke-width="1" />
+                <line x1="65" y1="160" x2="145" y2="160" stroke="#3F3F46" stroke-width="1" />
+
+                <!-- Smartphone Silhouette -->
+                <rect x="210" y="60" width="75" height="135" rx="10" stroke="#FFFFFF" stroke-width="1" fill="#0A0A0A" />
+                <line x1="235" y1="70" x2="260" y2="70" stroke="#52525B" stroke-width="1.5" stroke-linecap="round" />
+                <circle cx="247" cy="183" r="3" stroke="#52525B" stroke-width="1" />
+
+                <!-- Bidirectional Sync Wave Line -->
+                <path d="M 170 85 C 195 85, 185 125, 210 125" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="3 3" />
+                <polyline points="198 81 170 85 174 100" stroke="#FFFFFF" stroke-width="1" />
+                <polyline points="182 129 210 125 206 110" stroke="#FFFFFF" stroke-width="1" />
+
+                <text x="75" y="200" font-family="'JetBrains Mono', monospace" font-size="9" fill="#52525B">BIDIRECTIONAL SYNC ENGINE</text>
+              </svg>
+            </div>
+          </article>
+
+          <!-- Project 3: SparkJS -->
+          <article class="project-schematic-row">
+            <div class="project-info-col">
+              <div class="project-headline-wrap">
+                <span class="project-category-tag mono">Web Application &amp; Learning</span>
+                <h3 class="project-title-link">
+                  <a href="https://github.com/saha-cmd/SparkJS" target="_blank" rel="noopener noreferrer">
+                    SparkJS — Interactive JavaScript Learning Web App <span class="arrow-glyph">↗</span>
+                  </a>
+                </h3>
+              </div>
+
+              <p class="project-desc">
+                A lightweight, browser-based educational web application designed to help learners study and practice core JavaScript concepts through structured client-side modules.
+              </p>
+
+              <ul class="project-feature-list">
+                <li><span class="feature-bullet">·</span> <strong>Modular Web Architecture:</strong> Built with modular vanilla web architecture cleanly separating styling, interactive practice modules, and learning logic without heavy framework overhead.</li>
+                <li><span class="feature-bullet">·</span> <strong>Instant Static Deployment:</strong> Deployed as a fast, zero-backend static web application via GitHub Pages for instant browser accessibility.</li>
+              </ul>
+
+              <div class="project-tech-strip mono">
+                JavaScript · HTML5 · CSS3 · Node.js · GitHub Pages
+              </div>
+            </div>
+
+            <!-- Right Schematic Vector: Code Brackets & Radiating Spark Nodes -->
+            <div class="project-schematic-col" aria-hidden="true">
+              <svg class="schematic-svg" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Large Code Brackets -->
+                <text x="35" y="135" font-family="'JetBrains Mono', monospace" font-size="96" fill="#1F1F1F" font-weight="300">{</text>
+                <text x="235" y="135" font-family="'JetBrains Mono', monospace" font-size="96" fill="#1F1F1F" font-weight="300">}</text>
+
+                <!-- Central Radiating Spark Node Diagram -->
+                <circle cx="160" cy="110" r="16" stroke="#FFFFFF" stroke-width="1.5" />
+                <circle cx="160" cy="110" r="4" fill="#FFFFFF" />
+                
+                <!-- Radiating Node Rays -->
+                <line x1="160" y1="84" x2="160" y2="50" stroke="#3F3F46" stroke-width="1" />
+                <circle cx="160" cy="46" r="3" fill="#71717A" />
+
+                <line x1="160" y1="136" x2="160" y2="170" stroke="#3F3F46" stroke-width="1" />
+                <circle cx="160" cy="174" r="3" fill="#71717A" />
+
+                <line x1="138" y1="95" x2="110" y2="75" stroke="#3F3F46" stroke-width="1" />
+                <circle cx="106" cy="72" r="3" fill="#71717A" />
+
+                <line x1="182" y1="95" x2="210" y2="75" stroke="#3F3F46" stroke-width="1" />
+                <circle cx="214" cy="72" r="3" fill="#71717A" />
+
+                <line x1="138" y1="125" x2="110" y2="145" stroke="#3F3F46" stroke-width="1" />
+                <circle cx="106" cy="148" r="3" fill="#71717A" />
+
+                <line x1="182" y1="125" x2="210" y2="145" stroke="#3F3F46" stroke-width="1" />
+                <circle cx="214" cy="148" r="3" fill="#71717A" />
+
+                <text x="100" y="205" font-family="'JetBrains Mono', monospace" font-size="9" fill="#52525B">SPARK_JS // STATIC RUNNER</text>
+              </svg>
+            </div>
+          </article>
+
+          <!-- Project 4: Hotel Management System GUI -->
+          <article class="project-schematic-row">
+            <div class="project-info-col">
+              <div class="project-headline-wrap">
+                <span class="project-category-tag mono">Desktop Systems &amp; Python GUI</span>
+                <h3 class="project-title-link">
+                  <a href="https://github.com/saha-cmd" target="_blank" rel="noopener noreferrer">
+                    Hotel Management System GUI <span class="arrow-glyph">↗</span>
+                  </a>
+                </h3>
+              </div>
+
+              <p class="project-desc">
+                Desktop-based graphical user interface built for end-to-end hotel administration, featuring secure administrative credential validation, local data persistence, and an automated room-allotment algorithm.
+              </p>
+
+              <ul class="project-feature-list">
+                <li><span class="feature-bullet">·</span> <strong>Secure Administrative Authentication:</strong> Validates administrative credentials to protect guest records and payment workflows from unauthorized access.</li>
+                <li><span class="feature-bullet">·</span> <strong>Local Relational Storage Solutions:</strong> Resilient relational schema with atomic commits, structured table design, and zero reliance on external internet connections.</li>
+                <li><span class="feature-bullet">·</span> <strong>Automated Room Allotment Logic:</strong> Intelligently matches room categories, bed layouts, floor levels, and occupancy calendars tailored to client constraints.</li>
+              </ul>
+
+              <div class="project-tech-strip mono">
+                Python · Tkinter · Local Relational Database · Deterministic Logic
+              </div>
+            </div>
+
+            <!-- Right Schematic Vector: Floor-Plan Room Matrix Graphic -->
+            <div class="project-schematic-col" aria-hidden="true">
+              <svg class="schematic-svg" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Outer Architectural Perimeter -->
+                <rect x="35" y="30" width="250" height="145" stroke="#3F3F46" stroke-width="1.5" />
+                
+                <!-- Central Corridor -->
+                <line x1="35" y1="102" x2="285" y2="102" stroke="#1F1F1F" stroke-width="1" />
+                <text x="135" y="106" font-family="'JetBrains Mono', monospace" font-size="8" fill="#52525B">CORRIDOR</text>
+
+                <!-- Room Partitions (Top Row) -->
+                <line x1="97" y1="30" x2="97" y2="102" stroke="#27272A" stroke-width="1" />
+                <line x1="160" y1="30" x2="160" y2="102" stroke="#27272A" stroke-width="1" />
+                <line x1="222" y1="30" x2="222" y2="102" stroke="#27272A" stroke-width="1" />
+
+                <!-- Room Partitions (Bottom Row) -->
+                <line x1="110" y1="102" x2="110" y2="175" stroke="#27272A" stroke-width="1" />
+                <line x1="185" y1="102" x2="185" y2="175" stroke="#27272A" stroke-width="1" />
+
+                <!-- Room Labels & Door Swing Arcs -->
+                <text x="55" y="60" font-family="'JetBrains Mono', monospace" font-size="9" fill="#71717A">R.101</text>
+                <path d="M 85 102 A 12 12 0 0 0 97 90" stroke="#52525B" stroke-width="0.8" />
+
+                <text x="118" y="60" font-family="'JetBrains Mono', monospace" font-size="9" fill="#FFFFFF">R.102</text>
+                <circle cx="128" cy="78" r="2.5" fill="#FFFFFF" />
+                <path d="M 148 102 A 12 12 0 0 0 160 90" stroke="#52525B" stroke-width="0.8" />
+
+                <text x="180" y="60" font-family="'JetBrains Mono', monospace" font-size="9" fill="#71717A">R.103</text>
+                <text x="242" y="60" font-family="'JetBrains Mono', monospace" font-size="9" fill="#71717A">R.104</text>
+
+                <text x="60" y="145" font-family="'JetBrains Mono', monospace" font-size="9" fill="#71717A">SUITE.A</text>
+                <text x="135" y="145" font-family="'JetBrains Mono', monospace" font-size="9" fill="#71717A">SUITE.B</text>
+                <text x="215" y="145" font-family="'JetBrains Mono', monospace" font-size="9" fill="#71717A">ADMIN</text>
+
+                <text x="75" y="200" font-family="'JetBrains Mono', monospace" font-size="9" fill="#52525B">ALLOTMENT_MATRIX // ROOMS</text>
+              </svg>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         03. SKILLS SECTION (Wide 2x2 Open Typographic Grid with Corner Crosshairs)
+         ========================================================================== -->
+    <section class="asymmetric-section" id="skills">
+      <div class="wide-container asymmetric-grid">
+        
+        <!-- Left Column: Sticky Section Index + Glyph -->
+        <div class="sticky-section-nav">
+          <div class="section-badge mono">03 // SKILLS</div>
+          <p class="section-hint">Technical languages, tools &amp; core proficiencies.</p>
+          
+          <div class="section-svg-glyph" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <rect x="12" y="12" width="24" height="24" stroke="#27272A" stroke-width="1" />
+              <rect x="18" y="18" width="12" height="12" stroke="#FFFFFF" stroke-width="1.2" />
+              <line x1="24" y1="4" x2="24" y2="12" stroke="#52525B" stroke-width="1" />
+              <line x1="24" y1="36" x2="24" y2="44" stroke="#52525B" stroke-width="1" />
+              <line x1="4" y1="24" x2="12" y2="24" stroke="#52525B" stroke-width="1" />
+              <line x1="36" y1="24" x2="44" y2="24" stroke="#52525B" stroke-width="1" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Right Column: Wide 2x2 Open Typographic Grid -->
+        <div class="skills-wide-grid">
+          
+          <!-- Group 1: Languages -->
+          <div class="skill-group-box">
+            <div class="group-header">
+              <span class="corner-crosshair mono">+</span>
+              <h3 class="group-title mono">Languages</h3>
+            </div>
+            <p class="group-items-list">
+              Python, Kotlin, C++, C, JavaScript, SQL, HTML, VBA
+            </p>
+          </div>
+
+          <!-- Group 2: Frameworks & UI -->
+          <div class="skill-group-box">
+            <div class="group-header">
+              <span class="corner-crosshair mono">+</span>
+              <h3 class="group-title mono">Frameworks &amp; UI</h3>
+            </div>
+            <p class="group-items-list">
+              Jetpack Compose, React, Tkinter, Tailwind CSS
+            </p>
+          </div>
+
+          <!-- Group 3: Tools & Platforms -->
+          <div class="skill-group-box">
+            <div class="group-header">
+              <span class="corner-crosshair mono">+</span>
+              <h3 class="group-title mono">Tools &amp; Platforms</h3>
+            </div>
+            <p class="group-items-list">
+              Android Studio, Electron, Room / SQLite, Git, MS Excel, MS Word, MS PowerPoint
+            </p>
+          </div>
+
+          <!-- Group 4: Core Domains & 5 Languages Spoken -->
+          <div class="skill-group-box">
+            <div class="group-header">
+              <span class="corner-crosshair mono">+</span>
+              <h3 class="group-title mono">Core Domains &amp; Spoken</h3>
+            </div>
+            <p class="group-items-list">
+              AI &amp; Machine Learning, Software Engineering, Database Management, Process Automation · English, Hindi, Bengali (Full), Gujarati, Punjabi (Spoken)
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         04. EDUCATION & HONORS SECTION (Wide 1fr : 1fr Side-by-Side Spread)
+         ========================================================================== -->
+    <section class="asymmetric-section" id="education">
+      <div class="wide-container asymmetric-grid">
+        
+        <!-- Left Column: Sticky Section Index + Glyph -->
+        <div class="sticky-section-nav">
+          <div class="section-badge mono">04 // EDUCATION</div>
+          <p class="section-hint">Academic foundations, milestones &amp; accolades.</p>
+          
+          <div class="section-svg-glyph" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <polygon points="24 8 42 18 24 28 6 18" stroke="#FFFFFF" stroke-width="1.2" />
+              <path d="M 12 21.5 V 32 C 12 36 24 40 24 40 C 24 40 36 36 36 32 V 21.5" stroke="#27272A" stroke-width="1" />
+              <line x1="39" y1="20" x2="39" y2="34" stroke="#52525B" stroke-width="1.5" />
+              <circle cx="39" cy="35" r="2" fill="#FFFFFF" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Right Column: Wide Side-by-Side Spread (Timeline Left : Honors Right) -->
+        <div class="education-wide-spread">
+          
+          <!-- Column 1: Academic Milestones Timeline -->
+          <div class="education-milestones-col">
+            <h3 class="spread-subheading mono">// ACADEMIC TIMELINE</h3>
+            
+            <div class="timeline-entry">
+              <span class="timeline-year mono">2025 — 2029</span>
+              <div class="timeline-body">
+                <h4 class="timeline-degree">B.Tech in Computer Science Engineering (AI &amp; ML)</h4>
+                <div class="timeline-school">Netaji Subhas Engineering College, Kolkata (MAKAUT)</div>
+                <p class="timeline-annotation">
+                  Undergraduate curriculum in Artificial Intelligence and Machine Learning, Object-Oriented Programming (Python, C++), Data Structures, and Relational Database Systems.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-entry">
+              <span class="timeline-year mono">2025</span>
+              <div class="timeline-body">
+                <h4 class="timeline-degree">JEE Mains (Joint Entrance Examination)</h4>
+                <div class="timeline-school">National Testing Agency (NTA), India</div>
+                <p class="timeline-annotation">
+                  Qualified national engineering entrance examination with comprehensive foundations in Physics, Chemistry, and Advanced Mathematics.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-entry">
+              <span class="timeline-year mono">2025</span>
+              <div class="timeline-body">
+                <h4 class="timeline-degree">Senior School Certificate Examination (Class XII - CBSE)</h4>
+                <div class="timeline-school">Burnpur Riverside School, Chittaranjan</div>
+                <p class="timeline-annotation">
+                  Senior secondary coursework with Physics, Chemistry, Mathematics, and Computer Science. Served as School House Vice Captain.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-entry">
+              <span class="timeline-year mono">2023</span>
+              <div class="timeline-body">
+                <h4 class="timeline-degree">Secondary School Examination (Class X - CBSE)</h4>
+                <div class="timeline-school">Burnpur Riverside School, Chittaranjan</div>
+                <p class="timeline-annotation">
+                  Secondary education foundation with distinction in Mathematics, Science, and Languages.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Leadership, Honors & Accolades -->
+          <div class="honors-accolades-col">
+            <h3 class="spread-subheading mono">// LEADERSHIP &amp; ACCOLADES</h3>
+
+            <ul class="wide-honors-list">
+              <li>
+                <strong class="honor-lead">Vice Captain, School House:</strong>
+                <span>Elected to lead house operations, spearheading team coordination, inter-house sports tournaments, and student delegations.</span>
+              </li>
+              <li>
+                <strong class="honor-lead">Gold Medalist &amp; School Topper:</strong>
+                <span>Honored with gold medal for scholastic distinction, academic focus, and curriculum leadership.</span>
+              </li>
+              <li>
+                <strong class="honor-lead">Abacus Champion:</strong>
+                <span>Crowned champion for rapid mental arithmetic and analytical problem solving under competitive time constraints.</span>
+              </li>
+              <li>
+                <strong class="honor-lead">Bengali Recitation Champion &amp; Orator:</strong>
+                <span>Award-winning poetry reciter and winner of school and regional recitation competitions with public speaking poise.</span>
+              </li>
+              <li>
+                <strong class="honor-lead">1st Place 100m Sprint Gold:</strong>
+                <span>Secured 1st place gold in athletic track sprint across inter-house tournaments.</span>
+              </li>
+              <li>
+                <strong class="honor-lead">Football Tournament Trophies:</strong>
+                <span>Winner of multiple competitive football trophies across school leagues, alongside certified swimming coursework.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         05. CONTACT SECTION (Full-Width Wide Split Layout & Dot-Wave Graphic)
+         ========================================================================== -->
+    <section class="asymmetric-section contact-section" id="contact">
+      <div class="wide-container asymmetric-grid">
+        
+        <!-- Left Column: Sticky Section Index + Glyph -->
+        <div class="sticky-section-nav">
+          <div class="section-badge mono">05 // CONTACT</div>
+          <p class="section-hint">Availability, direct communication &amp; networks.</p>
+          
+          <div class="section-svg-glyph" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M 6 12 L 24 26 L 42 12" stroke="#FFFFFF" stroke-width="1.2" />
+              <rect x="6" y="10" width="36" height="28" stroke="#27272A" stroke-width="1" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Right Column: Wide Full-Width Split Layout -->
+        <div class="contact-wide-container">
+          
+          <h2 class="contact-giant-heading">
+            Let’s build something meaningful.
+          </h2>
+
+          <div class="contact-split-row">
+            
+            <!-- Left Side: Invitation & Copyable Email/Phone -->
+            <div class="contact-direct-left">
+              <p class="contact-lead-text">
+                Open to summer internships, freelance builds, and technical collaborations. Whether you have an inquiry or just want to discuss software architecture, my inbox is open.
+              </p>
+
+              <div class="contact-copy-lines">
+                <div class="copy-line-item">
+                  <span class="line-label mono">EMAIL</span>
+                  <button class="interactive-copy-trigger" data-copy="sahakalpa3010@gmail.com" title="Click to copy email">
+                    <span class="copy-text">sahakalpa3010@gmail.com</span>
+                    <span class="copy-pill mono">copy</span>
+                  </button>
+                </div>
+
+                <div class="copy-line-item">
+                  <span class="line-label mono">PHONE</span>
+                  <button class="interactive-copy-trigger" data-copy="+919547979364" title="Click to copy phone">
+                    <span class="copy-text">+91-9547979364</span>
+                    <span class="copy-pill mono">copy</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side: Large Clean Interactive External Links -->
+            <div class="contact-socials-right">
+              <a href="https://github.com/saha-cmd" target="_blank" rel="noopener noreferrer" class="large-social-anchor">
+                <span class="anchor-label">GitHub</span>
+                <span class="anchor-url mono">github.com/saha-cmd</span>
+                <span class="arrow-glyph">↗</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/kalpataru-saha-430134311" target="_blank" rel="noopener noreferrer" class="large-social-anchor">
+                <span class="anchor-label">LinkedIn</span>
+                <span class="anchor-url mono">linkedin.com/in/kalpataru-saha</span>
+                <span class="arrow-glyph">↗</span>
+              </a>
+
+              <a href="https://www.instagram.com/hrn.kalpa/" target="_blank" rel="noopener noreferrer" class="large-social-anchor">
+                <span class="anchor-label">Instagram</span>
+                <span class="anchor-url mono">@hrn.kalpa</span>
+                <span class="arrow-glyph">↗</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Subtle Full-Width Monochrome Dot-Wave SVG Graphic -->
+      <div class="footer-dot-wave-wrapper" aria-hidden="true">
+        <svg class="dot-wave-svg" viewBox="0 0 1480 60" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="40" cy="30" r="1.5" fill="#27272A" />
+          <circle cx="120" cy="24" r="1.5" fill="#27272A" />
+          <circle cx="200" cy="36" r="1.5" fill="#27272A" />
+          <circle cx="280" cy="20" r="1.5" fill="#27272A" />
+          <circle cx="360" cy="40" r="1.5" fill="#27272A" />
+          <circle cx="440" cy="22" r="1.5" fill="#27272A" />
+          <circle cx="520" cy="38" r="1.5" fill="#27272A" />
+          <circle cx="600" cy="18" r="1.5" fill="#27272A" />
+          <circle cx="680" cy="42" r="1.5" fill="#27272A" />
+          <circle cx="760" cy="20" r="1.5" fill="#27272A" />
+          <circle cx="840" cy="38" r="1.5" fill="#27272A" />
+          <circle cx="920" cy="22" r="1.5" fill="#27272A" />
+          <circle cx="1000" cy="36" r="1.5" fill="#27272A" />
+          <circle cx="1080" cy="24" r="1.5" fill="#27272A" />
+          <circle cx="1160" cy="32" r="1.5" fill="#27272A" />
+          <circle cx="1240" cy="26" r="1.5" fill="#27272A" />
+          <circle cx="1320" cy="34" r="1.5" fill="#27272A" />
+          <circle cx="1400" cy="28" r="1.5" fill="#27272A" />
+          <path d="M 0 30 Q 370 10, 740 30 T 1480 30" stroke="#1A1A1A" stroke-width="1" fill="none" />
+        </svg>
+      </div>
+
+      <!-- Minimal Bottom Copyright Line -->
+      <div class="wide-container footer-bottom-meta">
+        <span class="mono">KALPATARU SAHA // 2026</span>
+        <span class="mono">PURE BLACK #000000 CANVAS</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Monochrome Copy Toast -->
+  <div class="toast-notification" id="toastNotification" role="alert" aria-live="assertive">
+    <span class="toast-indicator">■</span>
+    <span id="toastMessage">Copied to clipboard!</span>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
